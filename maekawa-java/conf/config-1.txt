@@ -1,0 +1,30 @@
+##
+# Configuration #1
+##
+
+# Node ID, Mean Inter-request Delay, Mean CS Execution Time, Number of Requests
+5 20 10 1000
+
+# Node ID, Hostname and Port Number
+0 localhost 8080
+1 localhost 8081
+2 localhost 8082
+3 localhost 8083
+4 localhost 8084
+
+# Quorum Members for each node starting 0 going to 4
+
+# Node 0
+0       1         2
+
+# Node 1
+1       2         3
+
+# Node 2
+2       3         4
+
+# Node 3
+3        4        0
+
+# Node 4
+4        0         1
